@@ -159,7 +159,7 @@ embed {
   border: 1px solid #bbb;
   font-size: 20px;
   width: 30px;
-  height: 28px;
+  height: 30px;
   text-align: center;
   vertical-align: middle; }
   .Cell__cover {
@@ -167,7 +167,7 @@ embed {
     border-width: 1px;
     border-style: solid;
     border-color: #fff #999 #999 #fff;
-    height: 100%; }
+    height: 30px; }
     .Cell__cover--opened {
       background-color: #ddd;
       border: 1px solid #ddd; }

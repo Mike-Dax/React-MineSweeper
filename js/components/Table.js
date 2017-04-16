@@ -95,12 +95,39 @@ export default class Table extends React.Component {
                 <Row cells={row} open={this.open.bind(this)} mark={this.mark.bind(this)} />
             );
         });
+
+        var columnAmounts = []
+
+        for(var col = 0; col < this.props.colNum; col++){
+            columnAmounts[col] = 0
+        }
+
+        for(var row = 0; row < this.props.rowNum; row++){
+            for(var col = 0; col < this.props.colNum; col++){
+                var count = this.state.rows[row][col].count
+                if ( count && !isNaN(count) && Number.isInteger(count)) {
+                    columnAmounts[col] += this.state.rows[row][col].count
+                }
+            }
+        }
+
+        var phoneNumber = ''
+
+        for(var col = 0; col < this.props.colNum; col++){
+            phoneNumber += String(columnAmounts[col]).slice(-1)
+        }
+
         return(
+            <div>
             <table className="Table">
                 <tbody>
                     {Rows}
                 </tbody>
             </table>
+            <br/><br/>
+            <h2 class="Wrapper__subTitle" style={{textAlign:'center'}}>{phoneNumber}</h2>
+            <button style={{float:'right'}} disabled={this.props.status !== 'playing'}>Submit</button><br/>
+            </div>
         );
     }
 }
