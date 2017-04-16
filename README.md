@@ -1,9 +1,7 @@
-# React-MineSweeper
-This is a MineSweeper Game.
+# Minesweeper phone input
+Based on http://shibe97.github.io/mineSweeper/
 
-[http://shibe97.github.io/mineSweeper/](http://shibe97.github.io/mineSweeper/)
-
-![MineSweeper](https://shibe97.github.io/assets/images/ss/ss_minesweeper_01.png)
+![Awful Phone Input](https://zippy.gfycat.com/JointSkinnyIndianhare.gif)
 
 ## Setup
 ```
